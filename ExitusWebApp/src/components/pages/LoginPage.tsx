@@ -1,9 +1,74 @@
-import React from 'react'
+import { useState } from 'react'
+import Text from '../../static/Text.ts'
+import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 
 const LoginPage = () => {
-  return (
-    <div>LoginPage</div>
-  )
+
+    const [isShown, setIsShown] = useState(false)
+
+    return (
+        <div className='w-full h-screen bg-light-green flex justify-center items-center'>
+            <form className='w-1/3 xl:w-1/4 flex flex-col align-center items-center text-white'>
+
+                <img
+                    className='w-full mb-12'
+                    src={Text.src.logo}
+                    alt={Text.alt.logo}
+                />
+
+                <h1 className='font-extrabold text-5xl text-center mb-12'>
+                    {Text.loginpage.title}
+                </h1>
+
+                <p className='text-center text-xl w-3/4 mb-12'>
+                    {Text.loginpage.typeEmailAndPassword}
+                </p>
+
+                <div className='flex justify-start align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
+                    <AiOutlineMail className='text-2xl mr-4'/>
+
+                    <input
+                        className='bg-transparent placeholder:color-white/[1] outline-none'
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder={Text.loginpage.emailPlaceholder}
+                    />
+                </div>
+
+                <div className='flex justify-between align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
+                    <AiOutlineLock  className='text-2xl mr-4'/>
+
+                    <input
+                        className='bg-transparent placeholder:color-white/[1] outline-none w-[calc(100%-5rem)]'
+                        type={isShown ? 'text' : 'password'}
+                        name=""
+                        id=""
+                        placeholder={Text.loginpage.passwordPlaceholder}
+                    />
+
+                    <button
+                        onClick={() => setIsShown(!isShown)}
+                    >
+                        {
+                            isShown ?
+                                <AiOutlineEyeInvisible className='text-2xl mr-4' /> :
+                                <AiOutlineEye className='text-2xl mr-4' />
+                        }
+                    </button>
+                </div>
+
+                <p className='text-center text-base w-3/4 mb-12 cursor-pointer'>
+                    {Text.loginpage.forgotPassword}
+                </p>
+
+                <button className='bg-dark-green py-3 px-12 font-extrabold text-2xl rounded-3xl border-2'>
+                    {Text.loginpage.login}
+                </button>
+
+            </form>
+        </div>
+    )
 }
 
 export default LoginPage

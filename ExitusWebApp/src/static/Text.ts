@@ -5,4 +5,22 @@ export default class Text {
         register: "Registros",
         leave: "Saídas"
     }
+
+    public static readonly alt = {
+        logo: "Logo do IFSUL Câmpus Sapiranga",
+    }
+
+    public static readonly src = {
+        logo: "/images/IfsulLogo.png",
+    }
+
+    public static readonly loginpage = {
+        title: "EXITUS",
+        typeEmailAndPassword: "Por favor, digite seu e-mail e senha",
+        emailPlaceholder: "Digite seu e-mail",
+        passwordPlaceholder: "Digite sua senha",
+        forgotPassword: "Esqueceu sua senha?",
+        login: "Entrar",
+    }
+
 }
