@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import Text from '../../static/Text.ts'
 
 const Header = () => {
   return (
     <div>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Registros</Link>
-        <Link to="/student">Alunos</Link>
-        <Link to="/reponsible">Responsáveis</Link>
-        <Link to="/leave">Saídas</Link>
+        <Link to="/register">{Text.navbar.register}</Link>
+        <Link to="/student">{Text.navbar.students}</Link>
+        <Link to="/reponsible">{Text.navbar.responsible}</Link>
+        <Link to="/leave">{Text.navbar.leave}</Link>
     </div>
   )
 }
