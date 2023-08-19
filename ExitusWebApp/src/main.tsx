@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: "/reponsible",
+        path: "/responsible",
         element: (
             <RequireAuth loginPath='/login'>
                 <ResponsiblesPage />
