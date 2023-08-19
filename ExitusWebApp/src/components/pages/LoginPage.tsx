@@ -4,7 +4,7 @@ import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } fro
 import { UserWithEmailAndPassword } from '../../interfaces/UserWithEmailAndPassword.ts'
 import useLogin from '../../hooks/useLogin.ts'
 import { useSignIn } from 'react-auth-kit'
-import { redirect, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
 
