@@ -75,6 +75,7 @@ const LoginPage = () => {
                         type="email"
                         name="email"
                         id="email"
+                        required={true}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder={Text.loginpage.emailPlaceholder}
                     />
@@ -88,6 +89,7 @@ const LoginPage = () => {
                         type={isShown ? 'text' : 'password'}
                         name="password"
                         id="password"
+                        required={true}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder={Text.loginpage.passwordPlaceholder}
                     />
