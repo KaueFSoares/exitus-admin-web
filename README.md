@@ -4,7 +4,7 @@ Welcome to the web application designed for administrators of the Exitus platfor
 
 ## Introduction
 
-The Exitus platform is a solution developed to simplify and enhance access control for students and staff at IFSUL Campus Sapiranga. With a variety of features including student and guardian management, detailed entry and exit records, administrator authentication, and early exit scheduling, this platform is designed to ensure security and convenience.
+The Exitus platform is a solution developed to simplify and enhance access control for students and employees at IFSUL Campus Sapiranga. With a variety of features including student and responsible management, detailed entry and exit records, administrator authentication, and early exit scheduling, this platform is designed to ensure security, agility and convenience.
 
 ## Key Features
 
