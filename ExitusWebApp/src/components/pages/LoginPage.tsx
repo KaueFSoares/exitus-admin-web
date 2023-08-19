@@ -1,14 +1,57 @@
 import { useState } from 'react'
 import Text from '../../static/Text.ts'
 import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
+import { UserWithEmailAndPassword } from '../../interfaces/UserWithEmailAndPassword.ts'
+import useLogin from '../../hooks/useLogin.ts'
+import { useSignIn } from 'react-auth-kit'
+import { redirect, useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
 
     const [isShown, setIsShown] = useState(false)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const signIn = useSignIn()
+
+    const navigate = useNavigate()
+
+    const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+
+        const user: UserWithEmailAndPassword = {
+            email,
+            password
+        }
+
+        try {
+
+            const response = await useLogin(user)
+
+            const data = await response.json()
+
+            if (signIn({
+                token: data.token,
+                expiresIn: 60 * 60 * 24 * 3,
+                tokenType: 'Bearer',
+                authState: { email: email }
+            })) {
+                navigate('/register')
+            } else {
+                alert('Login failed')
+            }
+
+
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
 
     return (
         <div className='w-full h-screen bg-light-green flex justify-center items-center'>
-            <form className='w-1/3 xl:w-1/4 flex flex-col align-center items-center text-white'>
+
+            <form className='w-1/3 xl:w-1/4 flex flex-col align-center items-center text-white' onSubmit={(e) => handleOnSubmit(e)}>
 
                 <img
                     className='w-full mb-12'
@@ -25,25 +68,27 @@ const LoginPage = () => {
                 </p>
 
                 <div className='flex justify-start align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
-                    <AiOutlineMail className='text-2xl mr-4'/>
+                    <AiOutlineMail className='text-2xl mr-4' />
 
                     <input
                         className='bg-transparent placeholder:color-white/[1] outline-none'
                         type="email"
-                        name=""
-                        id=""
+                        name="email"
+                        id="email"
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder={Text.loginpage.emailPlaceholder}
                     />
                 </div>
 
                 <div className='flex justify-between align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
-                    <AiOutlineLock  className='text-2xl mr-4'/>
+                    <AiOutlineLock className='text-2xl mr-4' />
 
                     <input
                         className='bg-transparent placeholder:color-white/[1] outline-none w-[calc(100%-5rem)]'
                         type={isShown ? 'text' : 'password'}
-                        name=""
-                        id=""
+                        name="password"
+                        id="password"
+                        onChange={(e) => setPassword(e.target.value)}
                         placeholder={Text.loginpage.passwordPlaceholder}
                     />
 
@@ -67,6 +112,7 @@ const LoginPage = () => {
                 </button>
 
             </form>
+
         </div>
     )
 }
