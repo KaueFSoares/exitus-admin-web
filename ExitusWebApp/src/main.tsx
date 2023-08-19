@@ -5,6 +5,7 @@ import {
     RouterProvider,
 } from "react-router-dom"
 import "./index.css"
+import "./reset.css"
 import LoginPage from './components/pages/LoginPage.tsx'
 import RegistersPage from './components/pages/RegistersPage.tsx'
 import StudentsPage from './components/pages/StudentsPage.tsx'
