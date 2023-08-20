@@ -36,7 +36,7 @@ const LoginPage = () => {
                 tokenType: 'Bearer',
                 authState: { email: email }
             })) {
-                navigate('/register')
+                navigate(Text.url.register)
             } else {
                 alert('Login failed')
             }
