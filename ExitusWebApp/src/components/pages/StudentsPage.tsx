@@ -1,9 +1,11 @@
-import React from 'react'
+import PageWrapper from '../layout/PageWrapper.tsx'
 
 const StudentsPage = () => {
-  return (
-    <div>StudentsPage</div>
-  )
+    return (
+        <PageWrapper>
+            <h1>Students Page</h1>
+        </PageWrapper>
+    )
 }
 
 export default StudentsPage

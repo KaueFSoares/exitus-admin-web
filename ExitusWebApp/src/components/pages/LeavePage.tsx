@@ -1,9 +1,11 @@
-import React from 'react'
+import PageWrapper from '../layout/PageWrapper.tsx'
 
 const LeavePage = () => {
-  return (
-    <div>LeavePage</div>
-  )
+    return (
+        <PageWrapper>
+            <h1>Leave Page</h1>
+        </PageWrapper>
+    )
 }
 
 export default LeavePage

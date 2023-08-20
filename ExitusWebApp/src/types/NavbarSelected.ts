@@ -1,0 +1,1 @@
+export type NavbarSelected = "student" | "responsible" | "leave" | "register"

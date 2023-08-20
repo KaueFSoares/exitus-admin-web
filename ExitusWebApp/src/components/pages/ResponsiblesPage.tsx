@@ -1,9 +1,11 @@
-import React from 'react'
+import PageWrapper from '../layout/PageWrapper.tsx'
 
 const ResponsiblesPage = () => {
-  return (
-    <div>ResponsiblesPage</div>
-  )
+    return (
+        <PageWrapper>
+            <h1>Responsibles Page</h1>
+        </PageWrapper>
+    )
 }
 
 export default ResponsiblesPage

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import {
     createBrowserRouter,
@@ -12,6 +12,9 @@ import StudentsPage from './components/pages/StudentsPage.tsx'
 import ResponsiblesPage from './components/pages/ResponsiblesPage.tsx'
 import LeavePage from './components/pages/LeavePage.tsx'
 import { RequireAuth, AuthProvider } from 'react-auth-kit'
+import { NavbarSelected } from './types/NavbarSelected.ts'
+import NavbarContext from './components/context/NavbarContext.ts'
+import AppWrapper from './components/layout/AppWrapper.tsx'
 
 const router = createBrowserRouter([
     {
@@ -53,7 +56,9 @@ const router = createBrowserRouter([
 ])
 
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
+
     <React.StrictMode>
         <AuthProvider
             authType={'cookie'}
@@ -61,7 +66,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             cookieDomain={window.location.hostname}
             cookieSecure={false}
         >
-            <RouterProvider router={router} />
+
+            <AppWrapper>
+                <RouterProvider router={router} />
+            </AppWrapper>
+
         </AuthProvider>
     </React.StrictMode>,
+    
 )

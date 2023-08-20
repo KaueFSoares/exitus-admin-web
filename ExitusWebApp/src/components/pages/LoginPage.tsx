@@ -51,7 +51,7 @@ const LoginPage = () => {
     return (
         <div className='w-full h-screen bg-light-green flex justify-center items-center'>
 
-            <form className='w-1/3 xl:w-1/4 flex flex-col align-center items-center text-white' onSubmit={(e) => handleOnSubmit(e)}>
+            <form className='w-1/3 xl:w-1/4 flex flex-col items-center text-white' onSubmit={(e) => handleOnSubmit(e)}>
 
                 <img
                     className='w-full mb-12'
@@ -67,7 +67,7 @@ const LoginPage = () => {
                     {Text.loginpage.typeEmailAndPassword}
                 </p>
 
-                <div className='flex justify-start align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
+                <div className='flex justify-start items-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
                     <AiOutlineMail className='text-2xl mr-4' />
 
                     <input
@@ -81,7 +81,7 @@ const LoginPage = () => {
                     />
                 </div>
 
-                <div className='flex justify-between align-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
+                <div className='flex justify-between items-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
                     <AiOutlineLock className='text-2xl mr-4' />
 
                     <input

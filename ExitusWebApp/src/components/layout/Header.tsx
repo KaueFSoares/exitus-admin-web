@@ -1,16 +1,19 @@
-import React from 'react'
-import { Link } from "react-router-dom"
 import Text from '../../static/Text.ts'
+import Navbar from './Navbar.tsx'
+
 
 const Header = () => {
-  return (
-    <div>
-        <Link to="/register">{Text.navbar.register}</Link>
-        <Link to="/student">{Text.navbar.students}</Link>
-        <Link to="/reponsible">{Text.navbar.responsible}</Link>
-        <Link to="/leave">{Text.navbar.leave}</Link>
-    </div>
-  )
+    return (
+        <header className='bg-light-green h-[15%] px-4 py-1 flex items-center justify-between'>
+            <img
+                className='h-full w-auto'
+                src={Text.src.logo}
+                alt={Text.alt.logo}
+            />
+
+            <Navbar />
+        </header>
+    )
 }
 
 export default Header

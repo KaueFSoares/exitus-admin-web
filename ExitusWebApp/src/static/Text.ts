@@ -1,9 +1,16 @@
 export default class Text {
-    public static readonly  navbar = {
-        students: "Alunos",
+    public static readonly  navbartext = {
+        student: "Alunos",
         responsible: "Responsáveis",
         register: "Registros",
         leave: "Saídas"
+    }
+
+    public static readonly navbarurl = {
+        student: "/student",
+        responsible: "/responsible",
+        register: "/register",
+        leave: "/leave"
     }
 
     public static readonly alt = {
