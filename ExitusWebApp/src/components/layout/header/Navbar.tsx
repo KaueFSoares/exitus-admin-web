@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className='flex h-1/3 gap-6 xl:h-1/2'>
             <NavbarButton
                 text={Text.navbartext.register}
-                url={Text.navbarurl.register}
+                url={Text.url.register}
                 selected={navbar === "register"}
                 navbarSelected='register'
                 setNavbar={setNavbar}
@@ -19,7 +19,7 @@ const Navbar = () => {
 
             <NavbarButton
                 text={Text.navbartext.student}
-                url={Text.navbarurl.student}
+                url={Text.url.student}
                 selected={navbar === "student"}
                 navbarSelected='student'
                 setNavbar={setNavbar}
@@ -27,7 +27,7 @@ const Navbar = () => {
 
             <NavbarButton
                 text={Text.navbartext.responsible}
-                url={Text.navbarurl.responsible}
+                url={Text.url.responsible}
                 selected={navbar === "responsible"}
                 navbarSelected='responsible'
                 setNavbar={setNavbar}
@@ -35,7 +35,7 @@ const Navbar = () => {
 
             <NavbarButton
                 text={Text.navbartext.leave}
-                url={Text.navbarurl.leave}
+                url={Text.url.leave}
                 selected={navbar === "leave"}
                 navbarSelected='leave'
                 setNavbar={setNavbar}

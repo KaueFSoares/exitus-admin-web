@@ -6,11 +6,12 @@ export default class Text {
         leave: "Saídas"
     }
 
-    public static readonly navbarurl = {
-        student: "/student",
-        responsible: "/responsible",
-        register: "/register",
-        leave: "/leave"
+    public static readonly url = {
+        login: "/login",
+        student: "/alunos",
+        responsible: "/responsaveis",
+        register: "/registros",
+        leave: "/saidas"
     }
 
     public static readonly alt = {

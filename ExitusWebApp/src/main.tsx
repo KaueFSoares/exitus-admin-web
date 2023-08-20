@@ -15,40 +15,41 @@ import { RequireAuth, AuthProvider } from 'react-auth-kit'
 import { NavbarSelected } from './types/NavbarSelected.ts'
 import NavbarContext from './components/context/NavbarContext.ts'
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
+import Text from './static/Text.ts'
 
 const router = createBrowserRouter([
     {
-        path: "/login",
+        path: Text.url.login,
         element: <LoginPage />,
     },
     {
-        path: "/register",
+        path: Text.url.register,
         element: (
-            <RequireAuth loginPath='/login'>
+            <RequireAuth loginPath={Text.url.login}>
                 <RegistersPage />
             </RequireAuth>
         ),
     },
     {
-        path: "/student",
+        path: Text.url.student,
         element: (
-            <RequireAuth loginPath='/login'>
+            <RequireAuth loginPath={Text.url.login}>
                 <StudentsPage />
             </RequireAuth>
         ),
     },
     {
-        path: "/responsible",
+        path: Text.url.responsible,
         element: (
-            <RequireAuth loginPath='/login'>
+            <RequireAuth loginPath={Text.url.login}>
                 <ResponsiblesPage />
             </RequireAuth>
         ),
     },
     {
-        path: "/leave",
+        path: Text.url.leave,
         element: (
-            <RequireAuth loginPath='/login'>
+            <RequireAuth loginPath={Text.url.login}>
                 <LeavePage />
             </RequireAuth>
         ),
