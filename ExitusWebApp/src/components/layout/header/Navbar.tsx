@@ -8,7 +8,7 @@ const Navbar = () => {
     const {navbar, setNavbar} = useContext(NavbarContext)
 
     return (
-        <nav className='flex h-1/2 gap-6'>
+        <nav className='flex h-1/3 gap-6 xl:h-1/2'>
             <NavbarButton
                 text={Text.navbartext.register}
                 url={Text.navbarurl.register}
