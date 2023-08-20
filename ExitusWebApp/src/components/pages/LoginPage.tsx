@@ -95,6 +95,7 @@ const LoginPage = () => {
                     />
 
                     <button
+                        type='button'
                         onClick={() => setIsShown(!isShown)}
                     >
                         {
