@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { NavbarSelected } from "../../types/NavbarSelected.ts"
-import NavbarContext from "../context/NavbarContext.ts"
+import { NavbarSelected } from "../../../types/NavbarSelected.ts"
+import NavbarContext from "../../context/NavbarContext.ts"
 
 
 const AppWrapper = ({ children }: any) => {

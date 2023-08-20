@@ -1,7 +1,7 @@
 import NavbarButton from './NavbarButton.tsx'
-import Text from '../../static/Text.ts'
+import Text from '../../../static/Text.ts'
 import { useContext } from 'react'
-import NavbarContext from '../context/NavbarContext.ts'
+import NavbarContext from '../../context/NavbarContext.ts'
 
 const Navbar = () => {
 

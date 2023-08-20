@@ -1,4 +1,4 @@
-import Header from './Header.tsx'
+import Header from '../header/Header.tsx'
 
 const PageWrapper = ({ children }: any) => {
   return (

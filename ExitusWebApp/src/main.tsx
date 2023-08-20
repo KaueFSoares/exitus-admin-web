@@ -14,7 +14,7 @@ import LeavePage from './components/pages/LeavePage.tsx'
 import { RequireAuth, AuthProvider } from 'react-auth-kit'
 import { NavbarSelected } from './types/NavbarSelected.ts'
 import NavbarContext from './components/context/NavbarContext.ts'
-import AppWrapper from './components/layout/AppWrapper.tsx'
+import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
 
 const router = createBrowserRouter([
     {

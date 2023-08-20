@@ -1,4 +1,4 @@
-import PageWrapper from '../layout/PageWrapper.tsx'
+import PageWrapper from '../layout/wrapper/PageWrapper.tsx'
 
 const LeavePage = () => {
     return (

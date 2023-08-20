@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { NavbarSelected } from '../../types/NavbarSelected.ts'
+import { NavbarSelected } from '../../../types/NavbarSelected.ts'
 
 interface NavbarButtonProps {
     text: string,
