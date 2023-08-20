@@ -1,4 +1,4 @@
-# Exitus - Administrator Application
+# Exitus - Admin Application - *on development*
 
 Welcome to the web application designed for administrators of the Exitus platform!
 
