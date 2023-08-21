@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useIsAuthenticated } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
 import Text from '../../static/Text.ts'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
     createBrowserRouter,
@@ -12,8 +12,6 @@ import StudentsPage from './components/pages/StudentsPage.tsx'
 import ResponsiblesPage from './components/pages/ResponsiblesPage.tsx'
 import LeavePage from './components/pages/LeavePage.tsx'
 import { RequireAuth, AuthProvider } from 'react-auth-kit'
-import { NavbarSelected } from './types/NavbarSelected.ts'
-import NavbarContext from './components/context/NavbarContext.ts'
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
 import Text from './static/Text.ts'
 import Home from './components/pages/Home.tsx'
