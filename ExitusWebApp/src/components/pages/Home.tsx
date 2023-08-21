@@ -24,7 +24,7 @@ const Home = () => {
     }, [])
     
 
-    return <div id='Reload'></div>
+    return <div></div>
 
 }
 
