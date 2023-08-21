@@ -16,8 +16,13 @@ import { NavbarSelected } from './types/NavbarSelected.ts'
 import NavbarContext from './components/context/NavbarContext.ts'
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
 import Text from './static/Text.ts'
+import Home from './components/pages/Home.tsx'
 
 const router = createBrowserRouter([
+    {
+        path: Text.url.home,
+        element: <Home />,
+    },
     {
         path: Text.url.login,
         element: <LoginPage />,

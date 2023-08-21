@@ -11,7 +11,8 @@ export default class Text {
         student: "/alunos",
         responsible: "/responsaveis",
         register: "/registros",
-        leave: "/saidas"
+        leave: "/saidas",
+        home: "/",
     }
 
     public static readonly alt = {
