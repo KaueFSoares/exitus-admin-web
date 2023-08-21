@@ -78,6 +78,7 @@ const LoginPage = () => {
                         required={true}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder={Text.loginpage.emailPlaceholder}
+                        autoComplete='on'
                     />
                 </div>
 
@@ -92,6 +93,7 @@ const LoginPage = () => {
                         required={true}
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder={Text.loginpage.passwordPlaceholder}
+                        autoComplete='on'
                     />
 
                     <button
