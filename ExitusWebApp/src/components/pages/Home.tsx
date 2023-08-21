@@ -3,6 +3,11 @@ import { useIsAuthenticated } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
 import Text from '../../static/Text.ts'
 
+/**
+ * 
+ * Only a redirect page for first access
+ * 
+ */
 const Home = () => {
     
     const navigate = useNavigate()
