@@ -1,20 +1,20 @@
 import React from 'react'
+
 import ReactDOM from 'react-dom/client'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
+
 import "./index.css"
 import "./reset.css"
-import LoginPage from './components/pages/LoginPage.tsx'
-import RegistersPage from './components/pages/RegistersPage.tsx'
-import StudentsPage from './components/pages/StudentsPage.tsx'
-import ResponsiblesPage from './components/pages/ResponsiblesPage.tsx'
-import LeavePage from './components/pages/LeavePage.tsx'
+
 import { RequireAuth, AuthProvider } from 'react-auth-kit'
+
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
 import Text from './static/Text.ts'
-import Home from './components/pages/Home.tsx'
+
+import {Home, LoginPage, RegistersPage, StudentsPage, ResponsiblesPage, LeavePage} from './components/pages'
 
 const router = createBrowserRouter([
     {
