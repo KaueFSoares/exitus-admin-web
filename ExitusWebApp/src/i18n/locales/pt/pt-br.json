@@ -27,6 +27,12 @@
             "passwordPlaceholder": "Digite sua senha",
             "forgotPassword": "Esqueceu sua senha?",
             "login": "Entrar"
+        },
+        "notfoundpage": {
+            "title": "404",
+            "subtitle": "Página não encontrada",
+            "message": "Ops! A página que você está procurando não existe. Ela pode ter sido movida ou excluída",
+            "back": "Voltar para a página inicial"
         }
     }
 }

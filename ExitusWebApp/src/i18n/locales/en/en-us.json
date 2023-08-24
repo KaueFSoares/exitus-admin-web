@@ -27,6 +27,12 @@
             "passwordPlaceholder": "Enter your password",
             "forgotPassword": "Forgot your password?",
             "login": "Login"
+        },
+        "notfoundpage": {
+            "title": "404",
+            "subtitle": "Page not found",
+            "message": "Oops! The page you are looking for does not exist. It might have been moved or deleted",
+            "back": "Back to home"
         }
     }
 }

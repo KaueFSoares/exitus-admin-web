@@ -13,7 +13,7 @@ import { RequireAuth, AuthProvider } from 'react-auth-kit'
 
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
 
-import {Home, LoginPage, RegistersPage, StudentsPage, ResponsiblesPage, LeavePage} from './components/pages'
+import {Home, LoginPage, RegistersPage, StudentsPage, ResponsiblesPage, LeavePage, NotFound} from './components/pages'
 
 import "./i18n"
 
@@ -57,6 +57,10 @@ const router = createBrowserRouter([
                 <LeavePage />
             </RequireAuth>
         ),
+    },
+    {
+        path: "*",
+        element: <NotFound />
     }
 ])
 
