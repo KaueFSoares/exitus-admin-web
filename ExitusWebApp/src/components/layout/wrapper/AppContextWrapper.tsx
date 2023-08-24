@@ -7,7 +7,7 @@ import NavbarContext from "../../../context/NavbarContext.ts"
  * Provides the contexts for the whole app
  * 
  */
-const AppWrapper = ({ children }: any) => {
+const AppContextWrapper = ({ children }: any) => {
     
     const [navbar, setNavbar] = useState<NavbarSelected>("register")
 
@@ -18,4 +18,4 @@ const AppWrapper = ({ children }: any) => {
     )
 }
 
-export default AppWrapper
+export default AppContextWrapper

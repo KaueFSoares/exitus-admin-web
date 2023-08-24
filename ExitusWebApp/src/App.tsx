@@ -1,12 +1,8 @@
-import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Home, LoginPage, RegistersPage, StudentsPage, ResponsiblesPage, LeavePage, NotFound } from './components/pages'
 import { AuthProvider, RequireAuth } from 'react-auth-kit'
 import { useTranslation } from 'react-i18next'
-import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
-
-
-
+import AppContextWrapper from './components/layout/wrapper/AppContextWrapper.tsx'
 
 const App = () => {
 
@@ -66,11 +62,9 @@ const App = () => {
             cookieDomain={window.location.hostname}
             cookieSecure={false}
         >
-
-            <AppWrapper>
+            <AppContextWrapper>
                 <RouterProvider router={router} />
-            </AppWrapper>
-
+            </AppContextWrapper>
         </AuthProvider>
     )
 }
