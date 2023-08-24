@@ -16,11 +16,12 @@ const Home = () => {
     const isAuthenticated = useIsAuthenticated()
 
     const onLoad = () => {
+        console.log(isAuthenticated())
         if(isAuthenticated()){
-            navigate("/register")
+            navigate("t('url.register')")
         }
         else {
-            navigate("/login")
+            navigate(t('url.login'))
         }
     }
 
