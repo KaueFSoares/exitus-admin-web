@@ -18,7 +18,7 @@ const Home = () => {
     const onLoad = () => {
         console.log(isAuthenticated())
         if(isAuthenticated()){
-            navigate("t('url.register')")
+            navigate(t('url.register'))
         }
         else {
             navigate(t('url.login'))
@@ -30,7 +30,7 @@ const Home = () => {
     }, [])
     
 
-    return <div></div>
+    return <></>
 
 }
 
