@@ -12,47 +12,48 @@ import "./reset.css"
 import { RequireAuth, AuthProvider } from 'react-auth-kit'
 
 import AppWrapper from './components/layout/wrapper/AppWrapper.tsx'
-import Text from './static/Text.ts'
 
 import {Home, LoginPage, RegistersPage, StudentsPage, ResponsiblesPage, LeavePage} from './components/pages'
 
+import "./i18n"
+
 const router = createBrowserRouter([
     {
-        path: Text.url.home,
+        path: "/",
         element: <Home />,
     },
     {
-        path: Text.url.login,
+        path: "/login",
         element: <LoginPage />,
     },
     {
-        path: Text.url.register,
+        path: "/register",
         element: (
-            <RequireAuth loginPath={Text.url.login}>
+            <RequireAuth loginPath={"/login"}>
                 <RegistersPage />
             </RequireAuth>
         ),
     },
     {
-        path: Text.url.student,
+        path: "/student",
         element: (
-            <RequireAuth loginPath={Text.url.login}>
+            <RequireAuth loginPath={"/login"}>
                 <StudentsPage />
             </RequireAuth>
         ),
     },
     {
-        path: Text.url.responsible,
+        path: "/responsible",
         element: (
-            <RequireAuth loginPath={Text.url.login}>
+            <RequireAuth loginPath={"/login"}>
                 <ResponsiblesPage />
             </RequireAuth>
         ),
     },
     {
-        path: Text.url.leave,
+        path: "/leave",
         element: (
-            <RequireAuth loginPath={Text.url.login}>
+            <RequireAuth loginPath={"/login"}>
                 <LeavePage />
             </RequireAuth>
         ),

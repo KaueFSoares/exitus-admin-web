@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "navbartext": {
+            "student": "Alunos",
+            "responsible": "Responsáveis",
+            "register": "Registros",
+            "leave": "Saídas"
+        },
+        "url": {
+            "login": "/login",
+            "student": "/alunos",
+            "responsible": "/responsaveis",
+            "register": "/registros",
+            "leave": "/saidas",
+            "home": "/"
+        },
+        "alt": {
+            "logo": "Logo do IFSUL Câmpus Sapiranga"
+        },
+        "src": {
+            "logo": "/images/IfsulLogo.png"
+        },
+        "loginpage": {
+            "title": "EXITUS",
+            "typeEmailAndPassword": "Por favor, digite seu e-mail e senha",
+            "emailPlaceholder": "Digite seu e-mail",
+            "passwordPlaceholder": "Digite sua senha",
+            "forgotPassword": "Esqueceu sua senha?",
+            "login": "Entrar"
+        }
+    }
+}

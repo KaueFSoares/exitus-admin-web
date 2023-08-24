@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "navbartext": {
+            "student": "Students",
+            "responsible": "Responsibles",
+            "register": "Registers",
+            "leave": "Leave"
+        },
+        "url": {
+            "login": "/login",
+            "student": "/student",
+            "responsible": "/responsible",
+            "register": "/register",
+            "leave": "/leave",
+            "home": "/"
+        },
+        "alt": {
+            "logo": "IFSUL Câmpus Sapiranga Logo"
+        },
+        "src": {
+            "logo": "/images/IfsulLogo.png"
+        },
+        "loginpage": {
+            "title": "EXITUS",
+            "typeEmailAndPassword": "Please enter your email and password",
+            "emailPlaceholder": "Enter your email",
+            "passwordPlaceholder": "Enter your password",
+            "forgotPassword": "Forgot your password?",
+            "login": "Login"
+        }
+    }
+}

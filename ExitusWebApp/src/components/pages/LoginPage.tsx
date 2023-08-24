@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import Text from '../../static/Text.ts'
 import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { UserWithEmailAndPassword } from '../../interfaces/UserWithEmailAndPassword.ts'
 import useLogin from '../../hooks/useLogin.ts'
 import { useSignIn } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const LoginPage = () => {
+    const { t } = useTranslation()
 
     const [isShown, setIsShown] = useState(false)
     const [email, setEmail] = useState('')
@@ -36,7 +37,7 @@ const LoginPage = () => {
                 tokenType: 'Bearer',
                 authState: { email: email }
             })) {
-                navigate(Text.url.register)
+                navigate(t('url.register'))
             } else {
                 alert('Login failed')
             }
@@ -55,16 +56,16 @@ const LoginPage = () => {
 
                 <img
                     className='w-full mb-12'
-                    src={Text.src.logo}
-                    alt={Text.alt.logo}
+                    src={t('src.logo')}
+                    alt={t('alt.logo')}
                 />
 
                 <h1 className='font-extrabold text-5xl text-center mb-12'>
-                    {Text.loginpage.title}
+                    {t('loginpage.title')}
                 </h1>
 
                 <p className='text-center text-xl w-3/4 mb-12'>
-                    {Text.loginpage.typeEmailAndPassword}
+                    {t('loginpage.typeEmailAndPassword')}
                 </p>
 
                 <div className='flex justify-start items-center bg-white/[.15] p-4 w-full rounded-xl mb-4'>
@@ -77,7 +78,7 @@ const LoginPage = () => {
                         id="email"
                         required={true}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder={Text.loginpage.emailPlaceholder}
+                        placeholder={t('loginpage.emailPlaceholder')}
                         autoComplete='on'
                     />
                 </div>
@@ -92,7 +93,7 @@ const LoginPage = () => {
                         id="password"
                         required={true}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder={Text.loginpage.passwordPlaceholder}
+                        placeholder={t('loginpage.passwordPlaceholder')}
                         autoComplete='on'
                     />
 
@@ -109,11 +110,11 @@ const LoginPage = () => {
                 </div>
 
                 <p className='text-center text-base w-3/4 mb-12 cursor-pointer'>
-                    {Text.loginpage.forgotPassword}
+                    {t('loginpage.forgotPassword')}
                 </p>
 
                 <button className='bg-dark-green py-3 px-12 font-extrabold text-2xl rounded-3xl border-2'>
-                    {Text.loginpage.login}
+                    {t('loginpage.login')}
                 </button>
 
             </form>

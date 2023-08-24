@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useIsAuthenticated } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
-import Text from '../../static/Text.ts'
+import { useTranslation } from 'react-i18next'
 
 /**
  * 
@@ -9,6 +9,7 @@ import Text from '../../static/Text.ts'
  * 
  */
 const Home = () => {
+    const {t} = useTranslation()
     
     const navigate = useNavigate()
 
@@ -17,10 +18,10 @@ const Home = () => {
     const onLoad = () => {
         console.log(isAuthenticated())
         if(isAuthenticated()){
-            navigate(Text.url.register)
+            navigate(t('url.register'))
         }
         else {
-            navigate(Text.url.login)
+            navigate(t('url.login'))
         }
     }
 

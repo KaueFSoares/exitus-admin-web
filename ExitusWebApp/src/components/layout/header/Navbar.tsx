@@ -1,41 +1,43 @@
 import NavbarButton from './NavbarButton.tsx'
-import Text from '../../../static/Text.ts'
 import { useContext } from 'react'
 import NavbarContext from '../../../context/NavbarContext.ts'
+import {useTranslation} from 'react-i18next'
 
 const Navbar = () => {
+
+    const {t} = useTranslation()
 
     const {navbar, setNavbar} = useContext(NavbarContext)
 
     return (
         <nav className='flex h-1/3 gap-6 xl:h-1/2'>
             <NavbarButton
-                text={Text.navbartext.register}
-                url={Text.url.register}
+                text={t('navbartext.register')}
+                url={t('url.register')}
                 selected={navbar === "register"}
                 navbarSelected='register'
                 setNavbar={setNavbar}
             />
 
             <NavbarButton
-                text={Text.navbartext.student}
-                url={Text.url.student}
+                text={t('navbartext.student')}
+                url={t('url.student')}
                 selected={navbar === "student"}
                 navbarSelected='student'
                 setNavbar={setNavbar}
             />
 
             <NavbarButton
-                text={Text.navbartext.responsible}
-                url={Text.url.responsible}
+                text={t('navbartext.responsible')}
+                url={t('url.responsible')}
                 selected={navbar === "responsible"}
                 navbarSelected='responsible'
                 setNavbar={setNavbar}
             />
 
             <NavbarButton
-                text={Text.navbartext.leave}
-                url={Text.url.leave}
+                text={t('navbartext.leave')}
+                url={t('url.leave')}
                 selected={navbar === "leave"}
                 navbarSelected='leave'
                 setNavbar={setNavbar}
