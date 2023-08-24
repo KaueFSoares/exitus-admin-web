@@ -8,10 +8,10 @@
         },
         "url": {
             "login": "/login",
-            "student": "/student",
-            "responsible": "/responsible",
-            "register": "/register",
-            "leave": "/leave",
+            "student": "/alunos",
+            "responsible": "/responsaveis",
+            "register": "/registros",
+            "leave": "/saidas",
             "home": "/"
         },
         "alt": {
