@@ -50,7 +50,7 @@ const App = () => {
             ),
         },
         {
-            path: "*",
+            path: "/*",
             element: <NotFound />
         }
     ])
