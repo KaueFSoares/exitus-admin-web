@@ -11,7 +11,7 @@ interface NavbarButtonProps {
 const NavbarButton = ({ text, url, selected, navbarSelected, setNavbar }: NavbarButtonProps) => {
     return (
         <Link
-            className={`text-xl font-bold py-2 px-4 rounded-xl flex items-center justify-center transition-all duration-200
+            className={`text-xl font-bold py-2 px-6 rounded-xl flex items-center justify-center transition-all duration-200
                         ${selected ?
                             'bg-white text-light-green' :
                             'hover:text-light-green hover:bg-white text-white'}
