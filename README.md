@@ -35,10 +35,25 @@ The Exitus application is developed using the following technologies:
 - [React.js](https://reactjs.org/): A JavaScript library for building interactive user interfaces.
 - [Tailwind CSS](https://tailwindcss.com/): A highly customizable CSS framework for creating modern designs.
 - [Vite](https://vitejs.dev/): An ultra-fast build tool and bundler for web applications.
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that adds static types for improved code quality and maintainability.
+
+## Main Libraries Used
+
+This project utilizes several key libraries to enhance its functionality and development process. Here's a brief overview of each library:
+
+- **[react-i18next](https://github.com/i18next/react-i18next):** A powerful internationalization framework for React applications, allowing you to easily add multi-language support.
+
+- **[react-auth-kit](https://github.com/react-auth-kit/react-auth-kit):** A library that provides utilities for implementing authentication and authorization in React applications.
+
+- **[react-router-dom](https://github.com/ReactTraining/react-router):** A declarative routing library for React applications, enabling dynamic navigation and routing between different views.
+
+- **[react-icons](https://react-icons.github.io/react-icons/):** A collection of popular icons as React components, simplifying the process of adding icons to the application.
+
+- **[axios](https://github.com/axios/axios):** A promise-based HTTP client for the browser and Node.js, allowing to make asynchronous HTTP requests easily.
 
 ## Application Design
 
-The application's design was created using the Figma tool. You can view the project on [Figma](https://www.figma.com/file/ZBO2o7c91A7X5hyK5vlEcf/Projetos?type=design&node-id=14%3A4&mode=design&t=64mcHrdkCiIpTyJj-1).
+The application's design was created using the Figma tool. You can view the project on [Figma](https://www.figma.com/file/ZBO2o7c91A7X5hyK5vlEcf/Projetos?type=design&node-id=111-172&mode=design).
 
 ## How to Run
 
