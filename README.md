@@ -1,5 +1,7 @@
 # Exitus - Admin Application - *on development*
 
+**Project current version deployed at:** [exitus.website](https://exitus.website)
+
 Welcome to the web application designed for administrators of the Exitus platform!
 
 ## Introduction
