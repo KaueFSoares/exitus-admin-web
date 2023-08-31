@@ -33,6 +33,26 @@
             "subtitle": "Página não encontrada",
             "message": "Ops! A página que você está procurando não existe. Ela pode ter sido movida ou excluída",
             "back": "Voltar para a página inicial"
+        }, 
+        "filtertag": {
+            "select": "Selecione",
+            "student_name": "Nome do aluno",
+            "student_cpf": "CPF do aluno",
+            "student_email": "E-mail do aluno",
+            "student_enrolment": "Matrícula do aluno",
+            "date_from": "Data inicial",
+            "date_to": "Data final",
+            "type": "Tipo",
+            "shift": "Turno",
+            "responsible_name": "Nome do responsável",
+            "responsible_cpf": "CPF do responsável",
+            "responsible_email": "E-mail do responsável",
+            "active": "Ativo",
+            "created_at": "Data de criação",
+            "created_to": "Data de criação até",
+            "updated_at": "Data de atualização",
+            "time_from": "Horário inicial",
+            "time_to": "Horário final"
         }
     }
 }

@@ -33,6 +33,27 @@
             "subtitle": "Page not found",
             "message": "Oops! The page you are looking for does not exist. It might have been moved or deleted",
             "back": "Back to home"
+        },
+        "filtertag": {
+            "select": "Select",
+            "student_name": "Student Name",
+            "student_cpf": "Student CPF",
+            "student_email": "Student Email",
+            "student_enrolment": "Student Enrollment",
+            "date_from": "Start Date",
+            "date_to": "End Date",
+            "type": "Type",
+            "shift": "Shift",
+            "responsible_name": "Responsible Name",
+            "responsible_cpf": "Responsible CPF",
+            "responsible_email": "Responsible Email",
+            "active": "Active",
+            "created_at": "Creation Date From",
+            "created_to": "Creation Date To",
+            "updated_at": "Update Date",
+            "time_from": "Start time",
+            "time_to": "End time"
         }
+        
     }
 }
