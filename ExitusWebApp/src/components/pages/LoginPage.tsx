@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
-import { UserWithEmailAndPassword } from '../../interfaces/UserWithEmailAndPassword.ts'
+import { UserWithEmailAndPassword } from '../../interface/UserWithEmailAndPassword.ts'
 import useLogin from '../../hooks/useLogin.ts'
 import { useSignIn } from 'react-auth-kit'
 import { useNavigate } from 'react-router-dom'
