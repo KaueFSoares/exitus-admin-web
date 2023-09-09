@@ -60,20 +60,25 @@ The application's design was created using the Figma tool. You can view the proj
 ## How to Run
 
 1. Clone this repository to your local environment.
-2. In the project directory, execute the following command to install dependencies:
+2. Get into the project folder
+```javascript
+   cd project
+```
+3. In the project directory, execute the following command to install dependencies:
 ```javascript
    npm install
 ```
 or 
 ```javascript
-  yarn install
+  yarn
 ```
-3. After installing dependencies, execute the following command to start the development server:
+4. After installing dependencies, execute the following command to start the development server:
 ```javascript
   npm run dev
 ```
 or
 ```javascript
-  yarn dev
+  yarn run dev
 ```
-4. Open a web browser and access `http://localhost:5173` to view the application.
+5. Open a web browser and access `http://localhost:5173` to view the application.
+
